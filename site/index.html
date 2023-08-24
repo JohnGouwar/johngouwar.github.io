@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Content-Style-Type" content="text/css"><meta name="author" content="John Gouwar"><meta name="keywords" content="John Gouwar, John Gouwar Northeastern, John Gouwar programming languages"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="../assets/style.css" rel="stylesheet"><script src=".../assets/utils.js"></script><title>John Gouwar | Northeastern PRL</title><link href="3" rel="PhD. Student in Northeastern University's Programming Research Laboratory" class="person-title"></head><body><h1 class="page-title">John Gouwar</h1><img src="../assets/headshot.png" alt="Photo of John Gouwar" class="prof-pic"><div class="about"><h2>About Me</h2>
+<p>I am a 3rd year PhD. student in the <a href="https://prl.khoury.northeastern.edu/">Programming Research Laboratory</a>
+at Northeastern University advised by <a href="https://ccs.neu.edu/~arjunguha/main/home/">Arjun Guha</a>. My current
+research is in applied programming languages, specifically with a focus on large
+language models for code generation. I also work on building scalable
+abstractions for probabilistic programs with <a href="https://www.khoury.northeastern.edu/home/sholtzen/">Steven Holtzen</a>. I
+am broadly interested in applying programming languages techniques (especially
+those related to building compilers and DSLs) across the landscape of computing
+to make programs faster, safer, and more expressive.</p>
+<p>Before coming to Northeastern, I am incredibly lucky to have attended Grinnell
+College where I received a BA in Computer Science and Mathematics. While at
+Grinnell, I worked with Professor Jerod Weinman on automated alignment of
+historical map images to modern GIS data. I also participated in the
+Rutgers-DIMACS REU program, where I worked with Professor Eric Allender on
+proving circuit lower bounds for non-interactive statistical zero-knowledge
+proof protocols.</p>
+</div><div class="publications"><h2>Publications</h2><table><thead></thead><tbody><tr><td><span class="paper-title">Knowledge Transfer from High-Resource to Low-Resource Programming Languages  for Code LLMs
+</span><span class="venue">Preprint 2023</span><br/><span class="authors">Federico Cassano, John Gouwar, Francesca Lucchetti, Claire Schlesinger, Carolyn Jane Anderson, Michael Greenberg, Abhinav Jangda, and Arjun Guha</span><br/><a href="#" onclick="toggleHide('multipl-t-abstr'); return false;">Show Abstract</a><br/><span class="abstract" id="multipl-t-abstr"><p>Over the past few years, Large Language Models of Code (Code LLMs) have
+started to have a significant impact on programming practice. Code LLMs
+are also emerging as a building block for research in programming
+languages and software engineering. However, the quality of code produced
+by a Code LLM varies significantly by programming languages. Code LLMs
+produce impressive results on programming languages that are well
+represented in their training data (e.g., Java, Python, or JavaScript),
+but struggle with low-resource languages, like OCaml and Racket. These
+languages enjoy dedicated communities (programming languages research;
+finance) but are not as well represented in training data as more broadly
+popular languages.</p>
+<p>This paper presents an effective approach for boosting the performance of
+Code LLMs on low-resource languages using semi-synthetic data. Our
+approach generates high-quality datasets for low-resource languages, which
+can then be used to fine-tune any pretrained Code LLM. Our approach,
+called MultiPL-T, translates training data from high-resource languages
+into training data for low-resource languages in the following way. 1) We
+use a Code LLM to synthesize tests for commented code from a high-resource
+language, filtering out faulty tests and code with low test coverage. 2)
+We use a Code LLM to translate code to a target low-resource language, and
+use tests to validate the translation. We apply this approach to generate
+tens of thousands of new, validated training items for Racket, OCaml, and
+Lua from Python. Moreover, we use an open dataset (The Stack) and model
+(StarCoderBase), which allow us to decontaminate benchmarks and train
+models on this data without violating the model license.</p>
+<p>With MultiPL-T generated data, we present fine-tuned versions of
+StarCoderBase that achieve state-of-the-art performance for Racket, OCaml,
+and Lua on benchmark problems. For Lua, our fine-tuned model achieves the
+same performance as StarCoderBase as Python—a very high-resource
+language–on the MultiPL-E benchmarks. For Racket and OCaml, we double
+their performance on MultiPL-E, bringing their performance close to
+higher-resource languages such as Ruby and C#.</p>
+<p>The MultiPL-T approach is easy to apply to new languages and can
+immediately be used on any of the 18+ languages that MultiPL-E supports.
+Moreover, as we show, it is significantly more efficient and effective
+than alternates such as training longer.</p></span><a href="https://arxiv.org/abs/2308.09895">Arxiv</a><a href="https://huggingface.co/datasets/nuprl/MultiPL-T">Datasets</a></td></tr><tr><td><span class="paper-title">MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code  Generation
+</span><span class="venue">IEEE Transactions on Software Engineering (TSE) 2023</span><br/><span class="authors">Federico Cassano, John Gouwar, Daniel Nguyen, Sydney Nguyen, Luna Phipps-Costin, Donald Pinckney, Ming-Ho Yee, Yangtian Zi, Carolyn Jane Anderson, Molly Q Feldman, Arjun Guha, Michael Greenberg, and Abhinav Jangda</span><br/><a href="#" onclick="toggleHide('multipl-e-abstr'); return false;">Show Abstract</a><br/><span class="abstract" id="multipl-e-abstr"><p>Large language models have demonstrated the ability to generate both natural
+language and programming language text. Although contemporary code generation
+models are trained on corpora with several programming languages, they are
+tested using benchmarks that are typically monolingual. The most widely used
+code generation benchmarks only target Python, so there is little quantitative
+evidence of how code generation models perform on other programming languages.
+We propose MultiPL-E, a system for translating unit test-driven code generation
+benchmarks to new languages. We create the first massively multilingual code
+generation benchmark by using MultiPL-E to translate two popular Python code
+generation benchmarks to 18 additional programming languages. We use MultiPL-E
+to extend the HumanEval benchmark (Chen et al., 2021) and MBPP benchmark (Austin
+et al., 2021) to 18 languages that encompass a range of programming paradigms
+and popularity. Using these new parallel benchmarks, we evaluate the
+multi-language performance of three state-of-the-art code generation models:
+Codex (Chen et al., 2021), CodeGen (Nijkamp et al., 2022) and InCoder (Fried et
+al., 2022). We find that Codex matches or even exceeds its performance on Python
+for several other languages. The range of programming languages represented in
+MultiPL-E allow us to explore the impact of language frequency and language
+features on model performance. Finally, the MultiPL-E approach of compiling code
+generation benchmarks to new programming languages is both scalable and
+extensible, making it straightforward to evaluate new models, benchmarks, and
+languages.</p></span><a href="https://doi.org/10.1109/TSE.2023.3267446">DOI</a><a href="https://github.com/nuprl/MultiPL-E">Code</a></td></tr><tr><td><span class="paper-title">Cryptographic Hardness under Projections for Time-Bounded Kolmogorov  Complexity
+</span><span class="venue">Theoretical Computer Science 2023</span><br/><span class="authors">Eric Allender, John Gouwar, Shuichi Hirahara, and Caleb Robelle</span><br/><a href="#" onclick="toggleHide('niszk-l-abstr'); return false;">Show Abstract</a><br/><span class="abstract" id="niszk-l-abstr"><p>A version of time-bounded Kolmogorov complexity, denoted <code>KT</code>, has received
+attention in the past several years, due to its close connection to circuit
+complexity and to the Minimum Circuit Size Problem <code>MCSP</code>. Essentially all
+results about the complexity of <code>MCSP</code> hold also for <code>MKTP</code> (the problem of
+computing the complexity of a string). Both and are hard for <code>SZK</code> (Statistical
+Zero Knowledge) under <code>BPP</code>-Turing reductions; neither is known to be
+<code>NP</code>-complete.</p>
+<p>Recently, some hardness results for <code>MKTP</code> were proved that are not (yet) known
+to hold for <code>MCSP</code>. In particular, is hard for <code>DET</code> (a subclass of <code>P</code>) under
+nonuniform reductions. In this paper, we improve this, to show that co-<code>MKTP</code> is
+hard for the (apparently larger) class <code>NISZKL</code> under not only <code>NC0</code> many-one
+reductions but even under projections. Also co-<code>MKTP</code> is hard for <code>NISZK</code> under
+non-uniform polynomial many-one reductions. Here, <code>NISZK</code> is the class of
+problems with non-interactive zero-knowledge proofs, and <code>NISZKL</code> is the
+non-interactive version of the class <code>SZKL</code> that was studied by Dvir et al.</p>
+<p>As an application, we provide several improved worst-case to average-case
+reductions to problems in <code>NP</code>, and we obtain a new lower bound on <code>MKTP</code> (which
+is currently not known to hold for <code>MCSP</code>).</p></span><a href="https://doi.org/10.1016/j.tcs.2022.10.040">DOI</a></td></tr></tbody></table></div><footer><a href="https://github.com/JohnGouwar"><div class="gh-logo"><img src="../assets/github-mark.png" alt="Github logo"></div></a><a href="https://scholar.google.com/citations?user=WQbxx8wAAAAJ&hl"><div class="gs-logo"><img src="../assets/google-scholar.png" alt="Google Scholar logo"></div></a></footer></body></html>
