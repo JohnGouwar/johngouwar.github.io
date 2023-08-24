@@ -17,8 +17,6 @@ struct Cli {
     #[arg(long, default_value = "publications")]
     publications: PathBuf,
 
-    #[arg(long, default_value = "docs")]
-    site: PathBuf,
 }
 
 fn main() {
@@ -30,7 +28,7 @@ fn main() {
         .with_raw(markdown::to_html(&about_text));
     let pubs_html = publications::compile_publications(args.publications);
     let full_html = index::build_index(vec![about_html, pubs_html]);
-    let index_path = args.site.join("index.html");
+    let index_path = "index.html";
     let _ = std::fs::write(index_path, full_html).expect("Failed to write index.html");
 
 }

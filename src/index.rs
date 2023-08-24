@@ -22,8 +22,8 @@ fn build_header() -> HtmlPage {
             ("name", "viewport"),
             ("content", "width=device-width, initial-scale=1.0")
         ])
-        .with_head_link("../assets/style.css", "stylesheet")
-        .with_script_link(".../assets/utils.js")
+        .with_head_link("assets/style.css", "stylesheet")
+        .with_script_link("assets/utils.js")
         .with_title("John Gouwar | Northeastern PRL")
         .with_header_attr(1, "John Gouwar", [("class", "page-title")])
         .with_head_link_attr(
@@ -39,14 +39,14 @@ fn build_footer() -> Container {
             "https://github.com/JohnGouwar", 
             Container::default()
                 .with_attributes([("class", "gh-logo")])
-                .with_image("../assets/github-mark.png", "Github logo")
+                .with_image("assets/github-mark.png", "Github logo")
                 .to_html_string()
         )
         .with_link(
             "https://scholar.google.com/citations?user=WQbxx8wAAAAJ&hl",
             Container::default()
                 .with_attributes([("class", "gs-logo")])
-                .with_image("../assets/google-scholar.png", "Google Scholar logo")
+                .with_image("assets/google-scholar.png", "Google Scholar logo")
                 .to_html_string()
         )
 }
