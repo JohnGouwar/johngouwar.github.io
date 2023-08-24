@@ -17,7 +17,7 @@ struct Cli {
     #[arg(long, default_value = "publications")]
     publications: PathBuf,
 
-    #[arg(long, default_value = "site")]
+    #[arg(long, default_value = "docs")]
     site: PathBuf,
 }
 
