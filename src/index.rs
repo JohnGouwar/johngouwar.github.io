@@ -22,6 +22,10 @@ fn build_header() -> HtmlPage {
             ("name", "viewport"),
             ("content", "width=device-width, initial-scale=1.0")
         ])
+        .with_meta([
+            ("name", "google-site-verification"),
+            ("content", "66xKixQeaq-GlVXwcsnLOgJf1i2B6N4SpIh7qgnsxuQ")
+        ])
         .with_head_link("assets/style.css", "stylesheet")
         .with_script_link("assets/utils.js")
         .with_title("John Gouwar | Northeastern PRL")
