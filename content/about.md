@@ -17,6 +17,10 @@ Rutgers-DIMACS REU program, where I worked with Professor Eric Allender on
 proving circuit lower bounds for non-interactive statistical zero-knowledge
 proof protocols.
 
+## Contact 
+
+I am most easily reached by email: gouwar.j (at) northeastern (dot) edu
+
 [prl-link]: https://prl.khoury.northeastern.edu/
 [arjun-link]: https://ccs.neu.edu/~arjunguha/main/home/
 [steven-link]: https://www.khoury.northeastern.edu/home/sholtzen/
