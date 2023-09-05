@@ -26,11 +26,15 @@ fn build_header() -> HtmlPage {
             ("name", "google-site-verification"),
             ("content", "66xKixQeaq-GlVXwcsnLOgJf1i2B6N4SpIh7qgnsxuQ")
         ])
+        .with_meta([
+            ("name", "description"),
+            ("content", "The personal website for John Gouwar, a PhD. student in the Northeastern Programming research laborartory. Publications and contact info.")
+        ])
         .with_head_link("assets/style.css", "stylesheet")
         .with_script_link("assets/utils.js")
         .with_title("John Gouwar | Northeastern PRL")
         .with_header_attr(1, "John Gouwar", [("class", "page-title")])
-        .with_head_link_attr(
+        .with_header_attr(
             3, 
             "PhD. Student in Northeastern University's Programming Research Laboratory",
             [("class", "person-title")])
