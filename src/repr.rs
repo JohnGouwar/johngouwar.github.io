@@ -1,5 +1,21 @@
 use serde::Deserialize;
+use toml::Table;
 
+#[derive(Deserialize)]
+pub struct FrontMatter { 
+    author: String,
+    description: String, 
+    keywords: Vec<String>,
+    title: String,
+    stylesheets: Vec<String>,
+    scripts: Vec<String>
+}
+
+#[derive(Deserialize)]
+pub struct Header { 
+    front: FrontMatter,
+    meta: Table
+}
 
 #[derive(Deserialize)]
 pub struct Publication {

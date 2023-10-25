@@ -7,6 +7,7 @@ mod index;
 mod publications;
 mod repr;
 mod html;
+mod toml_index;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]

@@ -1,28 +1,28 @@
 ---
-    id: multipl-e
-    order: 2
-    title: > 
-      MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code 
-      Generation
-    year: 2023 
-    authors: [
-      "Federico Cassano", 
-      "John Gouwar", 
-      "Daniel Nguyen", 
-      "Sydney Nguyen", 
-      "Luna Phipps-Costin", 
-      "Donald Pinckney", 
-      "Ming-Ho Yee", 
-      "Yangtian Zi", 
-      "Carolyn Jane Anderson", 
-      "Molly Q Feldman", 
-      "Arjun Guha", 
-      "Michael Greenberg", 
-      "Abhinav Jangda"
-    ]
-    venue: IEEE Transactions on Software Engineering (TSE)
-    doi: https://doi.org/10.1109/TSE.2023.3267446
-    code: https://github.com/nuprl/MultiPL-E
+id: multipl-e
+order: 2
+title: > 
+  MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural Code 
+  Generation
+year: 2023 
+authors: [
+  "Federico Cassano", 
+  "John Gouwar", 
+  "Daniel Nguyen", 
+  "Sydney Nguyen", 
+  "Luna Phipps-Costin", 
+  "Donald Pinckney", 
+  "Ming-Ho Yee", 
+  "Yangtian Zi", 
+  "Carolyn Jane Anderson", 
+  "Molly Q Feldman", 
+  "Arjun Guha", 
+  "Michael Greenberg", 
+  "Abhinav Jangda"
+]
+venue: IEEE Transactions on Software Engineering (TSE)
+doi: https://doi.org/10.1109/TSE.2023.3267446
+code: https://github.com/nuprl/MultiPL-E
 ---
 Large language models have demonstrated the ability to generate both natural
 language and programming language text. Although contemporary code generation
