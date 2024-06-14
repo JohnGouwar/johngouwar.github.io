@@ -1,8 +1,8 @@
 ## About Me
 
-This summer, I am a working at Lawrence Livermore National Laboratory on better
-reusing ABI-compatible packages without rebuilds in [Spack][spack-link] advised
-by [Todd Gamblin][todd-link].
+This summer, I am a working under [Todd Gamblin][todd-link] at Lawrence
+Livermore National Laboratory on extending [Spack's][spack-link] solver to
+better reuse already-built packages. 
 
 I am a 3rd year PhD. student in the [Programming Research Laboratory][prl-link]
 at Northeastern University advised by [Arjun Guha][arjun-link]. My current
