@@ -1,5 +1,9 @@
 ## About Me
 
+This summer, I am a working at Lawrence Livermore National Laboratory on better
+reusing ABI-compatible packages without rebuilds in [Spack][spack-link] advised
+by [Todd Gamblin][todd-link].
+
 I am a 3rd year PhD. student in the [Programming Research Laboratory][prl-link]
 at Northeastern University advised by [Arjun Guha][arjun-link]. My current
 research is in applied programming languages, specifically with a focus on large
@@ -24,4 +28,5 @@ I am most easily reached by email: gouwar.j (at) northeastern (dot) edu
 [prl-link]: https://prl.khoury.northeastern.edu/
 [arjun-link]: https://ccs.neu.edu/~arjunguha/main/home/
 [steven-link]: https://www.khoury.northeastern.edu/home/sholtzen/
-
+[todd-link]: https://people.llnl.gov/gamblin2
+[spack-link]: https://spack.readthedocs.io/en/latest/  
