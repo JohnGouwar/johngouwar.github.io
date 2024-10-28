@@ -4,19 +4,22 @@ order: 3
 title: >
   Knowledge Transfer from High-Resource to Low-Resource Programming Languages 
   for Code LLMs
-year: 2023 
+year: 2024 
 authors: [
   "Federico Cassano", 
   "John Gouwar", 
   "Francesca Lucchetti", 
   "Claire Schlesinger", 
+  "Anders Freeman",
+  "Molly Q. Feldman",
   "Carolyn Jane Anderson", 
   "Michael Greenberg", 
   "Abhinav Jangda", 
   "Arjun Guha"
 ]
-venue: Preprint
+venue: OOPSLA 2024 
 arxiv: https://arxiv.org/abs/2308.09895
+doi: https://doi.org/10.1145/3689735
 datasets: https://huggingface.co/datasets/nuprl/MultiPL-T
 ---
 Over the past few years, Large Language Models of Code (Code LLMs) have
