@@ -17,7 +17,7 @@ authors: [
   "Abhinav Jangda", 
   "Arjun Guha"
 ]
-venue: OOPSLA 2024 
+venue: OOPSLA 
 arxiv: https://arxiv.org/abs/2308.09895
 doi: https://doi.org/10.1145/3689735
 datasets: https://huggingface.co/datasets/nuprl/MultiPL-T
