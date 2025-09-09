@@ -1,6 +1,6 @@
 ## About Me
 
-I am a 4th year PhD. student in the [Programming Research Laboratory][prl-link]
+I am a 5th year PhD. student in the [Programming Research Laboratory][prl-link]
 at Northeastern University advised by [Arjun Guha][arjun-link]. Currently, I am
 also working with [Todd Gamblin][todd-link] at Lawrence Livermore National
 Laboratory on extending [Spack's][spack-link] solver to better reuse
