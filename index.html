@@ -19,7 +19,21 @@ Allender</a> on proving circuit lower bounds for non-interactive
 statistical zero-knowledge proof protocols.</p>
 <h2>Contact</h2>
 <p>I am most easily reached by email: gouwar.j (at) northeastern (dot) edu</p>
-</div><div class="publications"><h2>Publications</h2><table><thead></thead><tbody><tr><td><span class="paper-title">Scaling Optimization Over Uncertainty via Compilation
+</div><div class="publications"><h2>Publications</h2><table><thead></thead><tbody><tr><td><span class="paper-title">Bridging the Gap Between Binary and Source Based Package Management in Spack
+</span><span class="venue">Super Computing 2025</span><br/><span class="authors">John Gouwar, Gregory Becker, Tamara Dahlgren, Nathan Hanford, Arjun Guha, and Todd Gamblin</span><br/><a href="#" onclick="toggleHide('spack-splicing-abstr'); return false;">Show Abstract</a><br/><span class="abstract" id="spack-splicing-abstr"><p>Binary package managers install software quickly but they limit configurability
+due to rigid ABI requirements that ensure compatibility between binaries. Source
+package managers provide flexibility in building software, but compilation can
+be slow. For example, installing an HPC code with a new MPI implementation may
+result in a full rebuild. Spack, a widely deployed, HPC-focused package manager,
+can use source and pre-compiled binaries, but lacks a binary compatibility
+model, so it cannot mix binaries not built together. We present splicing, an
+extension to Spack that models binary compatibility between packages and allows
+seamless mixing of source and binary distributions. Splicing augments Spack's
+packaging language and dependency resolution engine to reuse compatible binaries
+but maintains the flexibility of source builds. It incurs minimal
+installation-time overhead and allows rapid installation from binaries, even for
+ABI-sensitive dependencies like MPI that would otherwise require many rebuilds.</p>
+</span><a href="https://arxiv.org/abs/2509.07728">Arxiv</a></td></tr><tr><td><span class="paper-title">Scaling Optimization Over Uncertainty via Compilation
 </span><span class="venue">OOPSLA 2025</span><br/><span class="authors">Minsung Cho, John Gouwar, and Steven Holtzen</span><br/><a href="#" onclick="toggleHide('pineappl-abstr'); return false;">Show Abstract</a><br/><span class="abstract" id="pineappl-abstr"><p>Probabilistic inference is fundamentally hard, yet many tasks require
 optimization on top of inference, which is even harder. We present a new
 optimization-via-compilation strategy to scalably solve a certain class of such
